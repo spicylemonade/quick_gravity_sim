@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quick_gravity_sim"
+version = "0.1.0"
+description = "A simple Python 2D N-body gravity simulator"
+authors = [
+  { name = "Quick Gravity Sim Contributors" }
+]
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.22"
+]
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+quick-gravity-sim = "quick_gravity_sim.cli:main"
